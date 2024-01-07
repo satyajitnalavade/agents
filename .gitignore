@@ -9,3 +9,5 @@ lib/
 lib64/
 share/
 *.cfg
+tools/__pycache__/
+tools/__pycache__/sql.cpython-310.pyc
