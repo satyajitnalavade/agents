@@ -1,6 +1,13 @@
 import sqlite3
 from langchain.tools import Tool
 
+def list_tables():
+    c= conn.cursor()
+    c.execute("SELECT name from sqlite_master Where type='table';")
+    rows = c.fetchall()
+    return "\n".join(row[0] for row in rows if row[0] is not None)
+
+
 conn = sqlite3.connect("db.sqlite")
 
 def run_sqlite_query(query):
