@@ -1,0 +1,11 @@
+/.env
+/venv
+/bin
+/lib
+/emb/
+bin/
+include/
+lib/
+lib64/
+share/
+*.cfg
